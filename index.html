@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- aos animtion -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-black p-3 fs-5   navbar ">
+    <div class="container-fluid me-4 ms-4 ">
+      <a class="navbar-brand text-white fs-3" href="#">Uber</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white rounded-1"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+           <li class="nav-item dropdown  hover-bg  ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              company
+            </a>
+            <ul class="dropdown-menu  mt-4 p-3   fs-4">
+              <li><a class="dropdown-item  text-gray" href="#">About us</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Our offerings</a></li>
+              <li><a class="dropdown-item text-gray" href="#">How Uber works</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Global citizenship</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Newsroom</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Investor relations</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Blog</a></li>
+              <li><a class="dropdown-item text-gray" href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item hover-bg ">
+            <a class="nav-link active text-white" aria-current="page" href="#">Safety</a>
+          </li>
+          <li class="nav-item hover-bg ">
+            <a class="nav-link text-white" href="#">Help</a>
+          </li>
+         
+         
+        </ul>
+          <ul class="navbar-nav  mb-2 mb-lg-0 gap-4">
+              <li class="nav-item dropdown  hover-bg  ">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa-solid fa-language"></i></span> EN
+                </a>
+                <ul class="dropdown-menu  mt-4 p-3   fs-4">
+                  <li><a class="dropdown-item  text-gray" href="#">English</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Chinese</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">German</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Hindi</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Malayalam</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Tamil</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Telugu</a></li>
+                  <li><a class="dropdown-item text-gray" href="#">Japanese</a></li>
+                </ul>
+              </li>
+                <li class="nav-item dropdown  hover-bg  ">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Product
+                  </a>
+                  <ul class="dropdown-menu   mt-4 p-3   fs-4">
+                    <li><a class="dropdown-item  text-gray" href="#"><span><i class="fa-solid fa-house"></i></span> Home</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-motorcycle"></i></span> Ride</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-car"></i></span> Drive</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-bowl-food"></i></span> Eat</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-wine-bottle"></i></span> Merchants</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"> <span><i class="fa-solid fa-truck-fast"></i></span>Freight</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-motorcycle"></i></span>Bike & scoot</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-truck-fast"></i></span>Transit</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-suitcase"></i></span>Business</a></li>
+                    <li><a class="dropdown-item text-gray" href="#"><span><i class="fa-solid fa-money-bill"></i></span> Money</a></li>
+                    
+                  </ul>
+                </li>
+              <li class="nav-item hover-bg">
+                <a class="nav-link text-white" id="signIn" href="#">Log in</a>
+              </li>
+              <li class="nav-item hover-bg" id="signup">
+                <a class="nav-link text-white" href="#">Sign up</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- poster -->
+   <main>
+    <!-- sign-up -->
+    <section id="signup-section-page" class="z-3 position-fixed  bg-black text-white top-0 bottom-0 w-100 opacity-75 ">
+         <div class="container">
+          <h5 id="signUp-close" class="text-end mt-5 fw-bolder">X</h5>
+          
+             <div class="signup-wrapper " >
+              <h2 class="text-center mb-5 fs-2 fw-bolder">Sign up section </h2>
+                <div class="row  signup-wrapper-box">
+                  <div class="signup-box col-6">
+                    <h5>Sign up to drive and deliver <span><i class="fa-solid fa-arrow-right"></i></span></h5>
+                    <hr>
+                  </div>
+                  <div class="signup-box  col-6">
+                    <h4>Create a rider account <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row signup-wrapper-box">
+                  <div class="signup-box   col-6">
+                    <h4>Order delivery with uber Eats<span><i class="fa-solid fa-arrow-right"></i></span></h4>
+                    <hr>
+                  </div>
+                  <div class="signup-box  col-6">
+                    <h1>Sign up for uber for Uber business<span><i class="fa-solid fa-arrow-right"></i></span></h1>
+                    <hr>
+                  </div>
+                </div>
+             </div>
+             
+         </div>
+    </section>
+ <!-- sign up ends here -->
+      <div class="poster container-fluid p-0 position-relative m-0 " data-aos="zoom-in-up">
+        <div class="col-12">
+          <img id="main-img" class="w-100 object-fit-cover  " style="height:700px;" src="./img/Rider getting into car.jpg" alt="poster-image">
+          <img id="white-img" src="./img/white.jpg" alt="white" class="w-100 object-fit-cover"style="height:700px;">
+
+        </div>
+        <!-- relative box -->
+        <div class=" position-absolute poster-relative-position  bg-white    rounded-4  p-4 
+              ">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-row  justify-content-around  ">
+              <div class="icon-section ride">
+                <h3><i class="fa-solid fa-car"></i></h3>
+                <h4>Ride</h4>
+              </div>
+              <div class="icon-section drive">
+                <h3 class="text-center"><i class="fa-brands fa-nfc-symbol"></i></h3>
+                <h4>Drive or Deliver</h4>
+              </div>
+              <div class="icon-section rent">
+                <h3 class="text-center"><i class="fa-brands fa-creative-commons-share"></i></h3>
+                <h4>Rent your fleet</h4>
+              </div>
+            </div>
+            <!-- underline -->
+            <div class="text-black  ">
+              <hr>
+            </div>
+      
+            <div class="heading">
+              <h4 class="text-black fw-bolder " id="heading-text">Request a ride now</h4>
+            </div>
+            <div class="form-section">
+              <form class="d-flex flex-column gap-2 ">
+                <input class="p-3 rounded-2 border-1 inp-col" type="search" placeholder="Enter pickup location">
+                <input class="p-3 rounded-2 border-1 inp-col" type="search" placeholder="Enter destination">
+              </form>
+            </div>
+            <div class="d-flex flex-column ">
+              <div class="deliver-section">
+                <h2 class="box-para fs-6">Drive on the platform with the largest network of active riders.</h2>
+                <button class="bg-black text-white fw-bold p-2 rounded-1 fs-6 border-0 drive-rent-btn">sign up to
+                  drive</button>
+                <h4>Learn more about driving and delivering</h4>
+                <h5>
+                  <hr>
+                </h5>
+              </div>
+            </div>
+      
+            <div class="  w-100 ">
+              <div class="form-section-btn  w-100  ">
+                <button class="bg-black text-white fw-bold rounded-2   border-0 ">Request now</button>
+                <button class="text-white  fw-bold   border-0 rounded-2 schedule-btn">Schedule for Later</button>
+              </div>
+            </div>
+          </div>
+      
+   
+        </div>
+      </div>
+      
+      
+      
+      <section class="container-fluid  p-0 position-relative " data-aos="fade-down">
+      
+        <div class="col-12 ">
+          <img class="longposter-img w-100  img-fluid" style="height: 300px;" src="./img/HP-U4B-NYC-bkg.png"
+            alt="poster-image">
+        </div>
+        <div class="col-12 position-absolute top-50 start-50 translate-middle text-center">
+             <h2>The Uber you know, reimagined for business</h2>
+             <p>A platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+             <button class="bg-black text-white fw-bold p-2">Get started</button>
+        </div>
+      
+      </section>
+
+      <section class="mt-5" data-aos="fade-down">
+        <div class="container ">
+            <h1 class="mt-4 mb-4 fw-bold text-center">Ride with Uber</h1>
+        </div>
+        <div class="container ">
+            <div class="box-wrapper  row gy-lg-5 gy-0">
+              <!-- box-1 -->
+                 <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12 ">
+                      <div class="img-box">
+                           <img class="" src="./img/Uber Auto 3D Icon.png" alt="uber-auto" data-aos="flip-down">
+                      </div>
+                      <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                           <div >
+                            <h3 class="fw-bold fs-1">Uber Auto</h3>
+                            <p>Get Affordable uber auto rides with no haggling .request uber auto and ride comfortably around your city</p>
+                           </div>
+                           <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                      </div>
+                 </div>
+                 <!-- box-2 -->
+                    
+                    <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                      <div class="img-box">
+                        <img src="./img/Uber Moto 3D Icon.png" alt="uber-motor" data-aos="flip-down">
+                      </div>
+                      <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                        <div>
+                          <h3 class="fw-bold fs-1">Uber Motor</h3>
+                          <p>Get Affordable uber bikes at your doorstep .skip the crowd and zip through traffic with uber moto</p>
+                        </div>
+                        <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                      </div>
+                    </div>
+                      <!-- box-3 -->
+                      
+                      <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                        <div class="img-box">
+                          <img src="./img/3D icon of a sedan car plus a 2D icon.png" alt="sedan-car" data-aos="flip-up">
+                        </div>
+                        <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                          <div>
+                            <h3 class="fw-bold fs-1">Uber Rentals</h3>
+                            <p>Book rentals to save time with one car and drive for your multi stop trips</p>
+                          </div>
+                          <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                      </div>
+                      <!-- box-4 -->
+                      
+                      <div class="box d-flex flex-sm-row flex-column  align-items-center col-lg-6  col-sm-12">
+                        <div class="img-box">
+                          <img src="./img/Uber Hourly.jpg" alt="ubercar" data-aos="flip-up">
+                        </div>
+                        <div class="img-description d-flex flex-sm-row flex-column text-center justify-content-center align-items-center">
+                          <div>
+                            <h3 class="fw-bold fs-1">Uber Intercity</h3>
+                            <p>Get Affordable uber auto rides with no haggling .request uber auto and ride comfortably around your city</p>
+                          </div>
+                          <h2><i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                      </div>
+                 
+            </div>
+        </div>
+      </section>
+
+    <!-- safety -->
+
+    <section class="mt-5" data-aos="fade-down">
+       <div class="container mb-5">
+           <h4 class="fs-1 fw-bold">Focused on safety, wherever you go</h4>
+       </div>
+
+       <div class="container ">
+             <div class="row d-flex justify-content-around ">
+                 <div class="box  col-lg-4 col-12 border mb-5">
+                     <div class="img-container">
+                        <img class="w-100 object-fit-cover img-fluid h-auto"  src="./img/Overhead view of cars driving in a city.jpg" alt="overhead view of cars">
+                     </div>
+                     <div class="img-description">
+                         <h5>Our commitment to your safety</h5>
+                         <p>With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe
+                        environment for our users.</p>
+                        <div class="row">
+                          <h5>Read about our Community Guidelines
+                            <hr>
+                          </h5>
+                          <h6>See all safety features
+                            <hr>
+                          </h6>
+                        </div>
+                     </div>
+                 </div>
+
+                 <!-- box-2 -->
+                <div class="box  col-lg-4 col-12 border mb-5">
+                  <div class="img-container">
+                    <img class="w-100 object-fit-cover img-fluid h-auto" src="./img/Overhead view of cars driving in a city.jpg" alt="overhead view of cars">
+                  </div>
+                  <div class="img-description">
+                    <h5>Our commitment to your safety</h5>
+                    <p>With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a
+                      safe
+                      environment for our users.</p>
+                    <div class="row">
+                      <h5>Read about our Community Guidelines
+                        <hr>
+                      </h5>
+                      <h6>See all safety features
+                        <hr>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                
+             </div>
+       </div>
+    </section>
+
+    <section class="mt-5 mb-5" data-aos="fade-down">
+        <div class="container ">
+            <h5 class="fs-1">There’s more to love in the apps</h5>
+
+        </div>
+        <div class="container mt-5 mb-5 p-4 ">
+            <div class="box-wrapper row d-flex justify-content-around gy-sm-3 ">
+                <div class="box col-lg-5 col-12 d-flex  bg-color border border-secondary p-2 rounded-4 ">
+                    <div class="img-box">
+                        <img src="./img/Rider App logo.png" class="rounded-4 " alt="rider app logo">
+                    </div>
+                    <div class="img-small-desc  d-flex align-items-center d-flex flex-column flex-sm-row  ">
+                      <h3 class="me-4 fs-4  offset-1">Download the Driver app</h3>
+                      <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+
+                <div class="   col-lg-5 col-12  d-flex  bg-color border border-secondary p-2 rounded-4 gy-3">
+                  <div class="img-box">
+                    <img src="./img/Rider App logo.png" class="rounded-4" alt="rider app logo">
+                  </div>
+                  <div class="img-small-desc  d-flex flex-column flex-sm-row align-items-center">
+                    <h3 class="me-4 fs-4  offset-1 ">Download the Driver app</h3>
+                    <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" p-3">
+        <div class="container">
+             <div class="signup-out-wrapper d-flex flex-md-row flex-column  justify-content-between ">
+                 <div class="box d-flex flex-md-row flex-column  align-items-center ">
+                    <h5 class="fs-1" >Sign up to drive</h5>
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  
+                 </div>
+
+                 <!-- sign out -->
+                  <div class="box d-flex flex-md-row flex-column  align-items-center ">
+                    <h5 class="fs-1">Sign up to ride</h5>
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  </div>
+                  
+             </div>
+        </div>
+    </section>
+
+
+   </main>
+
+   <!-- footer section start here -->
+   <footer class="bg-black text-white p-4">
+      <div class="container">
+        <div class="uber-log row mb-4"><h4>Uber</h4></div>
+        <div class="help fw-bold row mb-4"><h6>Vist help center</h6></div>
+           <div class="footer-wrapper  d-flex justify-content-around flex-row flex-wrap">
+            <ul class="footer-section  list-unstyled fw-bold">
+                <li class="footer-section-title fs-4">Company</li>
+                <li>about us</li>
+                <li>our offerings</li>
+                <li>newsroom</li>
+                <li>investors</li>
+                <li>blog</li>
+                <li>careers</li>
+                <li>AI</li>
+                <li>Gift card</li>
+            </ul>
+            <ul class="footer-section  list-unstyled fw-bold ">
+              <li class="footer-section-title fs-4">Products</li>
+              <li>ride</li>
+              <li>Drive</li>
+              <li>Deliver</li>
+              <li>Eat</li>
+              <li>uber for business</li>
+              <li>uber freight</li>
+            </ul>
+            <ul class="footer-section  list-unstyled fw-bold">
+              <li class="footer-section-title fs-4">Global citizenship</li>
+              <li>safety</li>
+              <li>Diversity and inclusion</li>
+              <li>substainability</li>
+            </ul>
+               <ul class="footer-section  list-unstyled fw-bold">
+                  <li class="footer-section-title fs-4">Travel</li>
+                  <li>Airports</li>
+                  <li>cities</li>
+               </ul>
+           </div>
+      </div>
+   </footer>
+
+
+<!-- js -->
+<script src="./script.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/72e1a8d80d.js" crossorigin="anonymous"></script>
+
+
+  <!-- aniamtion aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
+</body>
+</html>
